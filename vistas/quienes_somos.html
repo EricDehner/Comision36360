@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,7 +32,7 @@
         </nav>
     </header>
     <main class="centerMain marginMain">
-        <section class="textBox">
+        <section data-aos-once="true" data-aos-duration="800" data-aos="zoom-in" class="textBox">
             <h3>¿Quienes somos?</h3>
             <p>Somos un proyecto familiar que surge del amor por las telas, los hilos y el diseño. Buscamos aportar un
                 granito de arena haciendo productos desde casa, con nuestras manos, nuestras máquinas de coser, y con
@@ -46,6 +48,9 @@
                 alt="logo_instagram">Contactenos</a>
         <a> <img width="15px" src="../imagenes/copyright.png" alt="">2020-2022</a>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
