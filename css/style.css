@@ -20,39 +20,16 @@
 
 /*fuentes*/
 
-body {
 
-    background-image: url(/imagenes/Fondo.png);
-    background-size: auto;
-    font-size: 19px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
 
-header {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(197, 200, 172, 0.807);
-}
-
-nav {
-    padding: 1rem;
-    box-sizing: content-box;
-}
 
 
 ul {
     list-style-type: none;
 }
 
-nav ul :hover {
-    color: black;
-}
 
 li {
-    padding: 1rem;
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
 }
@@ -63,9 +40,8 @@ a {
 }
 
 h1 {
-    margin-left: 25rem;
     font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
+    font-size: 5rem;
     color: rgb(77, 77, 77);
 }
 
@@ -79,27 +55,41 @@ footer {
     background-color: rgba(158, 158, 158, 0.434);
 }
 
+body {
+    background-image: url(/imagenes/Fondo.png);
+    background-size: auto;
+    font-size: 19px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+header {
+    background-color: rgba(197, 200, 172, 0.807);
+}
+
+.fondo {
+    background-color: rgba(197, 200, 172, 0.434);
+}
+
+.spaceLi{
+    padding: 0rem .7rem;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
 .baseWeb {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5rem auto 2rem;
+    grid-template-rows: rem auto 2rem;
 }
 
 .titulo {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.logo {
-    width: 70px;
-    margin-left: 1.5rem;
 }
 
 /*descripcion inicio*/
@@ -118,7 +108,13 @@ footer {
 }
 
 /*descripcion inicio*/
-
+.sizeImage {
+    width: 700px;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin: auto;
+    margin-bottom: 16rem;
+}
 
 /*main*/
 
@@ -212,7 +208,9 @@ footer {
 
 .models {
     width: 400px;
+    margin: auto;
 }
+
 
 /*modelos*/
 
@@ -351,39 +349,42 @@ form h3 {
 
 
 /*resopnsive mobile*/
+
 @media screen and (max-width: 480px) {
+ /*
     h1 {
         position: absolute;
         visibility: hidden;
     }
-
+/*
     header {
         padding: 0 3rem;
     }
-
+/*
     li {
         text-overflow: clip;
     }
-
+/*
     .baseWeb {
         height: 170vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 5rem auto 2rem;
     }
-
+/*
     .blog {
         width: 100%;
         justify-content: center;
         align-items: center;
         overflow: hidden;
     }
-
+/*
     .blogDer {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
+*/
 
     .galeria {
         display: grid;
@@ -393,17 +394,17 @@ form h3 {
         grid-auto-flow: dense;
         justify-items: center;
     }
-
+/*
     .mobileMargin {
         width: 90%;
         margin: auto;
     }
-
+/*
     .marginMain {
         margin: auto;
 
     }
-
+/*
     .introTalles {
         text-align: center;
     }
@@ -413,6 +414,7 @@ form h3 {
 
 
 /*resopnsive tablet*/
+/*
 @media screen and (max-width: 1180px) {
     h1 {
         position: absolute;
