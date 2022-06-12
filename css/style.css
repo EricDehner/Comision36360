@@ -62,15 +62,23 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
 header {
     background-color: rgba(197, 200, 172, 0.807);
 }
 
 .fondo {
-    background-color: rgba(197, 200, 172, 0.434);
+    background-color: rgba(203, 203, 174, 0.306);
+   
 }
 
-.spaceLi{
+.fondoNav {
+    background-color: rgba(197, 200, 172,.8);
+    border: 1px rgba(197, 200, 172);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.spaceLi {
     padding: 0rem .7rem;
 }
 
@@ -89,7 +97,7 @@ header {
 .titulo {
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 /*descripcion inicio*/
@@ -110,77 +118,24 @@ header {
 /*descripcion inicio*/
 .sizeImage {
     width: 700px;
-    padding: 2rem;
-    margin-top: 3rem;
     margin: auto;
-    margin-bottom: 16rem;
+    margin-bottom: 20rem;
 }
 
 /*main*/
 
-.blogContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .sombraImg {
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
-}
-
-.blog {
-    margin: 2rem;
-    padding: 1rem;
-    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
-    background-color: rgba(203, 203, 174, 0.306);
-    border: 1px solid rgba(34, 34, 34, 0.091);
-    border-radius: 4px;
-    display: flex;
-    width: 75%;
-}
-
-.blog div {
-    padding: 5rem;
-    font-size: 19px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.blogDer {
-    margin: 2rem;
-    padding: 1rem;
-    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
-    background-color: rgba(203, 203, 174, 0.306);
-    border: 1px solid rgba(34, 34, 34, 0.091);
-    border-radius: 4px;
-    display: flex;
-    width: 75%;
-    flex-direction: row-reverse;
-}
-
-.blogDer div {
-    padding: 5rem;
-    font-size: 19px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.blog div p {
-    text-align: center;
-}
-
-.blogDer div p {
-    text-align: center;
 }
 
 /*main*/
 
 
 /*modelos*/
+.espacioModelos{
+    margin-bottom: 2.5rem;
+
+}
 
 .tituloGaleria {
     display: flex;
@@ -189,27 +144,16 @@ header {
     overflow: hidden;
 }
 
-.galeria {
-    width: 100%;
-    overflow: hidden;
-    margin: auto;
-    padding: 2rem 0;
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(3, 400px);
-    justify-content: center;
-}
 
-.gridItem {
-    box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.671);
-    width: 400px;
-    height: 400px;
-}
 
 .models {
-    width: 400px;
+    width: 600px;
     margin: auto;
+margin-bottom: 5rem;
+box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+
 }
+
 
 
 /*modelos*/
@@ -257,7 +201,7 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(77, 77, 77);
     width: 100%;
-
+    margin-bottom: 2rem;
 }
 
 /*talles*/
@@ -272,8 +216,16 @@ section h3 {
     padding-bottom: 40px;
 }
 
+.boxShadow{
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.471);
+}
+
+
 .centerMain {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 5rem;
 }
 
 .textBox {
@@ -302,7 +254,6 @@ form h3 {
     background-color: rgba(203, 203, 174, 0.306);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.671);
 }
 
 .formImputs {
@@ -347,44 +298,24 @@ form h3 {
 /*footer*/
 
 
+@media screen and (max-width: 959px) {
+    .espacioCard {
+        margin-top: 2rem;
+    }
+
+    .models {
+        flex: 1 1 50%;
+    }
+}
 
 /*resopnsive mobile*/
 
-@media screen and (max-width: 480px) {
- /*
-    h1 {
-        position: absolute;
-        visibility: hidden;
+@media screen and (max-width: 575px) {
+    .sizeImage {
+        width: 700px;
+        margin-top: 3rem;
+       margin: 3rem;
     }
-/*
-    header {
-        padding: 0 3rem;
-    }
-/*
-    li {
-        text-overflow: clip;
-    }
-/*
-    .baseWeb {
-        height: 170vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5rem auto 2rem;
-    }
-/*
-    .blog {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-/*
-    .blogDer {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-*/
 
     .galeria {
         display: grid;
@@ -394,84 +325,12 @@ form h3 {
         grid-auto-flow: dense;
         justify-items: center;
     }
-/*
-    .mobileMargin {
-        width: 90%;
-        margin: auto;
-    }
-/*
-    .marginMain {
-        margin: auto;
 
-    }
-/*
-    .introTalles {
-        text-align: center;
-    }
-}
-
-/*resopnsive mobile*/
-
-
-/*resopnsive tablet*/
-/*
-@media screen and (max-width: 1180px) {
-    h1 {
-        position: absolute;
-        visibility: hidden;
-    }
-
-    li {
+    .centerMain {
         display: flex;
+        align-items: center;
         justify-content: center;
-        align-items: center;
+        margin: 0rem 1rem;
     }
 
-    header {
-        padding: 0 3rem;
-    }
-
-    .blogContainerTalles {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .blog {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .blogDer {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .blogContainer {
-        display: flex;
-        overflow: hidden;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .galeria {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        grid-template-rows: auto;
-        grid-auto-flow: dense;
-        justify-items: center;
-        overflow: hidden;
-    }
-
-    .marginMain {
-        margin: auto;
-
-    }
-
-}
-
-/*resopnsive tablet*/
+    /* resopnsive mobile */

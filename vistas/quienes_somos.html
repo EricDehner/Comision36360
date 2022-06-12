@@ -32,10 +32,16 @@
                     <ul class="navbar-nav">
                         <li class="nav-item spaceLi">
                             <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item spaceLi">
-                            <a class="nav-link" href=" /vistas/modelos.html">Modelos</a>
-                        </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/vistas/modelos.html" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Modelos
+                                </a>
+                                <ul class="dropdown-menu fondoNav" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="/vistas/barbijos.html">Barbijos</a></li>
+                                    <li><a class="dropdown-item" href="/vistas/almohadones.html">Almohadones</a></li>
+                                </ul>
+                            </li>
                         <li class="nav-item spaceLi">
                             <a class="nav-link" href="/vistas/talles.html">Talles</a>
                         </li>
@@ -51,9 +57,9 @@
         </nav>
     </header>
     <main class="centerMain">
-        <div class="card fondo">
-            <div class="card-body">
-                <h3>¿Quienes somos?</h3>
+        <div data-aos="zoom-in" data-aos-once="true" class="card fondo boxShadow">
+            <div class="card-body text-center">
+                <h3 class="dancing">¿Quienes somos?</h3>
                 <p>Somos un proyecto familiar que surge del amor por las telas, los hilos y el diseño. Buscamos aportar un
                     granito de arena haciendo productos desde casa, con nuestras manos, nuestras máquinas de coser, y con
                     mucho afecto. Arrancamos así despacito, dedicándole a cada producto su tiempo, sin olvidar ese

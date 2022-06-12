@@ -33,8 +33,15 @@
                         <li class="nav-item spaceLi">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item spaceLi">
-                            <a class="nav-link" href=" /vistas/modelos.html">Modelos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href=" /vistas/modelos.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos
+                            </a>
+                            <ul class="dropdown-menu fondoNav" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/vistas/barbijos.html">Barbijos</a></li>
+                                <li><a class="dropdown-item" href="/vistas/almohadones.html">Almohadones</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item spaceLi">
                             <a class="nav-link" href="/vistas/talles.html">Talles</a>
@@ -51,12 +58,12 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="overflow-hidden">
             <h2 class="titulo">Talles</h2>
-            <div class="d-flex justify-content-around ">
-                <div class="card fondo" style="width: 30rem;">
-                    <a><img class="card-img-top" width="300" src="../imagenes/Talle A.png" alt=""></a>
+            <div class="d-flex flex-wrap justify-content-around ">
+                <div data-aos-once="true" data-aos="fade-right" class="card fondo boxShadow" style="width: 30rem;">
                     <div class="card-body">
+                        <a><img class="card-img-top" width="300" src="../imagenes/Talle A.png" alt=""></a>
                         <h3 class="card-title">Barbijo tipo A</h3>
                         <table class="table" border=”1”>
                             <tr>
@@ -78,36 +85,37 @@
                     </div>
                 </div>
                 
-                <div class="card fondo" style="width: 30rem;">
-                    <div class="card-body">
-                        <a><img class="card-img-top" width="300" src="../imagenes/Talle B.png" alt=""></a>
-                        <h3 class="card-title">Barbijo tipo B</h3>
-                        <table class="table" border=”1”>
-                            <tr>
-                                <td>Pequeño</td>
-                                <td>Mediano</td>
-                                <td>Grande</td>
-                            </tr>
-                            <tr>
-                                <td>Largo: 22cm</td>
-                                <td>Largo: 25cm</td>
-                                <td>Largo: 27cm</td>
-                            </tr>
-                            <tr>
-                                <td>Alto: 10cm</td>
-                                <td>Alto: 13cm</td>
-                                <td>Alto: 14cm</td>
-                            </tr>
-                        </table>
-                    </div>
+                    <div data-aos-once="true" data-aos="fade-left" class="card fondo boxShadow espacioCard" style="width: 30rem;">
+                        <div class="card-body">
+                            <a><img class="card-img-top" width="300" src="../imagenes/Talle B.png" alt=""></a>
+                            <h3 class="card-title">Barbijo tipo B</h3>
+                            <table class="table" border=”1”>
+                                <tr>
+                                    <td>Pequeño</td>
+                                    <td>Mediano</td>
+                                    <td>Grande</td>
+                                </tr>
+                                <tr>
+                                    <td>Largo: 22cm</td>
+                                    <td>Largo: 25cm</td>
+                                    <td>Largo: 27cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Alto: 10cm</td>
+                                    <td>Alto: 13cm</td>
+                                    <td>Alto: 14cm</td>
+                                </tr>
+                            </table>
+                        </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="introTalles">
+                    <h5>¡Tambien podes comunicarte con nosotros para realizar talles mas acordes a vos! </h5>
                 </div>
             </div>
         </section>
-        <div>
-            <div class="introTalles">
-                <p>¡Tambien podes comunicarte con nosotros para realizar talles mas acordes a vos! </p>
-            </div>
-        </div>
     </main>
     <footer class="piePagina">
         <a target="_blank" href="https://www.instagram.com/reinabatata.textiles/"><img width="15px"

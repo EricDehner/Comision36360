@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,103 +20,47 @@
 </head>
 
 <body class="baseWeb">
-        <header>
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid ">
-                    <h1 class="navbar-brand ">Reina Batata</h1>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item spaceLi">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item spaceLi">
-                                <a class="nav-link" href=" /vistas/modelos.html">Modelos</a>
-                            </li>
-                            <li class="nav-item spaceLi">
-                                <a class="nav-link" href="/vistas/talles.html">Talles</a>
-                            </li>
-                            <li class="nav-item spaceLi">
-                                <a class="nav-link" href="/vistas/quienes_somos.html">Quienes somos</a>
-                            </li>
-                            <li class="nav-item spaceLi">
-                                <a class="nav-link" href="/vistas/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+                <h1 class="navbar-brand ">Reina Batata</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item spaceLi">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/vistas/modelos.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/vistas/barbijos.html">Barbijos</a></li>
+                                <li><a class="dropdown-item" href="/vistas/almohadones.html">Almohadones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item spaceLi">
+                            <a class="nav-link" href="/vistas/talles.html">Talles</a>
+                        </li>
+                        <li class="nav-item spaceLi">
+                            <a class="nav-link" href="/vistas/quienes_somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item spaceLi">
+                            <a class="nav-link" href="/vistas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section class="mobileMargin">
-            <h2 data-aos-once="true" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
-                class="tituloGaleria">¡Nuestros Barbijos!</h2>
-                <div class="galeria">
-                    <div data-aos="fade-down-right" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/1.png" alt="modelo1">
-                </div>
-                <div data-aos-once="true" data-aos="fade-down" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/2.png" alt="modelo2">
-                </div>
-                <div data-aos-once="true" data-aos="fade-down-left" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/3.png" alt="modelo3">
-                </div>
-                <div data-aos-once="true" data-aos="fade-up-right" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/4.png" alt="modelo4">
-                </div>
-                <div data-aos-once="true" data-aos="fade-up" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/5.png" alt="modelo5">
-                </div>
-                <div data-aos-once="true" data-aos="fade-up-left" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/6.png" alt="modelo6">
-                </div>
-                <div data-aos-once="true" data-aos="fade-up-right" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/7.png" alt="modelo7">
-                </div>
-                <div data-aos-once="true" data-aos="fade-up" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/8.png" alt="modelo8">
-                </div>
-                <div data-aos-once="true" data-aos="fade-up-left" class="gridItem">
-                    <img class="models" src="../imagenes/Modelos/9.png" alt="modelo9">
-                </div>
-            </div>
-            <div>
-                <h2 data-aos-once="true" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
-                    class="tituloGaleria">¡Ahora también almohadones!</h2>
-                <div class="galeria">
-                    <div data-aos-once="true" data-aos="fade-down-right" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/01.png" alt="modelo01">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-down" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/02.png" alt="modelo02">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-down-left" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/03.png" alt="modelo03">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-up-right" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/04.png" alt="modelo04">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-up" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/05.png" alt="modelo05">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-up-left" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/06.png" alt="modelo06">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-up-right" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/07.png" alt="modelo07">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-up" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/08.png" alt="modelo08">
-                    </div>
-                    <div data-aos-once="true" data-aos="fade-up-left" class="gridItem">
-                        <img class="models" src="../imagenes/Modelos/09.png" alt="modelo09">
-                    </div>
-                </div>
-            </div>
-        </section>
+
+    <!-- Pagina en blanco, quedó para agregar contenido. -->
+
     </main>
     <footer class="piePagina">
         <a target="_blank" href="https://www.instagram.com/reinabatata.textiles/"><img width="15px"
@@ -127,9 +72,9 @@
     <script>
         AOS.init();
     </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

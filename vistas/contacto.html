@@ -33,8 +33,15 @@
                         <li class="nav-item spaceLi">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item spaceLi">
-                            <a class="nav-link" href=" /vistas/modelos.html">Modelos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href=" /vistas/modelos.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos
+                            </a>
+                            <ul class="dropdown-menu fondoNav" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/vistas/barbijos.html">Barbijos</a></li>
+                                <li><a class="dropdown-item" href="/vistas/almohadones.html">Almohadones</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item spaceLi">
                             <a class="nav-link" href="/vistas/talles.html">Talles</a>
@@ -51,9 +58,9 @@
         </nav>
     </header>
     <main class="centerMain marginMain">
-        <section data-aos="zoom-in" class="formBox">
+        <section data-aos="zoom-in" class="formBox boxShadow">
             <form action="" method="get" enctype="text/plain">
-                <h2>Datos cliente</h2>
+                <h2 class="text-align">Datos cliente</h2>
                 <div>
                     <input class="formImputs" type="text" id="nombreCliente" name="nombre&apellidoCliente"
                         placeholder="Ingrese su nombre y apellido..">
