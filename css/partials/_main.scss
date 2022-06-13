@@ -1,0 +1,87 @@
+.main {
+    width: 100%;
+    overflow: hidden;
+
+    &_intro {
+        line-height: 25px;
+        padding: 1rem;
+        margin-top: 3rem;
+        border: 1px solid rgba(34, 34, 34, 0.091);
+        background-color: rgba(203, 203, 174, 0.306);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Gill Sans';
+        color: rgb(77, 77, 77);
+    }
+
+    &_titulo {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        margin: 1rem;
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    &_containerBlog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_sombraBlog {
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    &_sombraBlog_img {
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    &_blog--left {
+        margin: 2rem;
+        padding: 1rem;
+        background-color: rgba(203, 203, 174, 0.306);
+        border: 1px solid rgba(34, 34, 34, 0.091);
+        border-radius: 4px;
+        display: flex;
+        width: 75%;
+    }
+
+    &_blog--right {
+        margin: 2rem;
+        padding: 1rem;
+        background-color: rgba(203, 203, 174, 0.306);
+        border: 1px solid rgba(34, 34, 34, 0.091);
+        border-radius: 4px;
+        display: flex;
+        width: 75%;
+        flex-direction: row-reverse;
+    }
+
+    &_blog_texto {
+        padding: 5rem;
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_blog_texto--tituloPrincipal {
+        font-family: 'Dancing Script', cursive;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    &_blog_texto--tituloSecundario {
+        font-family: 'Dancing Script', cursive;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    &_blog_text--text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}

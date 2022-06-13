@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.baseWeb {
+  height: 100vh;
+  background-image: url(/imagenes/Fondo.png);
+  background-size: auto;
+  font-size: 19px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(197, 200, 172, 0.807);
+}
+
+.header_titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #4d4d4d;
+  padding: 0rem 2rem;
+}
+
+.header_navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+}
+
+.header_navBar--hover :hover {
+  color: black;
+}
+
+.header_navbar_item--decoration {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.header_navbar_item {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_intro {
+  line-height: 25px;
+  padding: 1rem;
+  margin-top: 3rem;
+  border: 1px solid rgba(34, 34, 34, 0.091);
+  background-color: rgba(203, 203, 174, 0.306);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Gill Sans';
+  color: #4d4d4d;
+}
+
+.main_titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.main_containerBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_sombraBlog {
+  -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.main_sombraBlog_img {
+  -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.main_blog--left {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgba(203, 203, 174, 0.306);
+  border: 1px solid rgba(34, 34, 34, 0.091);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+}
+
+.main_blog--right {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgba(203, 203, 174, 0.306);
+  border: 1px solid rgba(34, 34, 34, 0.091);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.main_blog_texto {
+  padding: 5rem;
+  font-size: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_blog_texto--tituloPrincipal {
+  font-family: 'Dancing Script', cursive;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.main_blog_texto--tituloSecundario {
+  font-family: 'Dancing Script', cursive;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.main_blog_text--text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: rgba(69, 69, 69, 0.434);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_item {
+  margin: 0rem 1.5rem;
+}
+
+.footer_text {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Koulen', cursive;
+  font-size: 1rem;
+  color: #4d4d4d;
+}
+
+.footer_icon {
+  margin-right: .5rem;
+  width: 15px;
+}
+/*# sourceMappingURL=main.css.map */
