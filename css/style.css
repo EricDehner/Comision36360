@@ -144,18 +144,29 @@ header {
     overflow: hidden;
 }
 
-
-
 .models {
     width: 600px;
     margin: auto;
-margin-bottom: 5rem;
-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
-
+    margin-bottom: 5rem;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    
 }
 
+.col {
+    flex: 1 0 0%;
+    width: 400px;
+    justify-content: center;
+    display: flex;
+}
 
+    .modelos { 
+        width: 400px;
+        margin: 1.2rem;
+    }
 
+    .modelos_titulo{
+        padding: 2rem;
+    }
 /*modelos*/
 
 
@@ -332,5 +343,8 @@ form h3 {
         justify-content: center;
         margin: 0rem 1rem;
     }
-
+    .modelos { 
+        width: 300px;
+        margin: 1.2rem;
+    }
     /* resopnsive mobile */
