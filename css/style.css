@@ -51,10 +51,6 @@ h2 {
     font-family: 'Dancing Script', cursive;
 }
 
-footer {
-    background-color: rgba(158, 158, 158, 0.434);
-}
-
 body {
     background-image: url(/imagenes/fondo/Fondo.png);
     background-size: auto;
@@ -63,11 +59,11 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-header {
+.navBar_color{
     background-color: rgba(197, 200, 172, 0.807);
 }
 
-.fondo {
+.card_color{
     background-color: rgba(203, 203, 174, 0.306);
    
 }
@@ -78,7 +74,7 @@ header {
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
-.spaceLi {
+.space_item {
     padding: 0rem .7rem;
 }
 
@@ -102,12 +98,11 @@ header {
 
 /*descripcion inicio*/
 
-.intro {
+.card_intro {
     line-height: 25px;
     padding: 1rem;
     margin-top: 3rem;
     border: 1px solid rgba(34, 34, 34, 0.091);
-    background-color: rgba(203, 203, 174, 0.306);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -220,7 +215,7 @@ header {
 
 /*Quienes somos*/
 
-section h3 {
+section h2 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 30px;
@@ -254,20 +249,13 @@ section h3 {
 
 
 /*formulario*/
-
-form h3 {
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-}
-
-.formBox {
+.form_box {
     width: 500px;
-    background-color: rgba(203, 203, 174, 0.306);
     padding: 30px;
     border-radius: 10px;
 }
 
-.formImputs {
+.form_imputs {
     width: 100%;
     background-color: rgba(79, 79, 67, 0.138);
     padding: 10px;
@@ -293,13 +281,13 @@ form h3 {
 
 /*footer*/
 
-.piePagina {
+.footer {
     display: flex;
     justify-content: center;
     background-color: rgba(158, 158, 158, 0.434);
 }
 
-.piePagina a {
+.footer_item {
     padding: .5rem;
     color: rgb(57, 57, 57);
     font-family: 'Bebas Neue', cursive;

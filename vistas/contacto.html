@@ -20,7 +20,8 @@
 </head>
 
 <body class="baseWeb">
-    <header>
+    <header class="navBar_color">
+        <!--NavBar-->
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid ">
                 <h1 class="navbar-brand ">Reina Batata</h1>
@@ -30,26 +31,34 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end fondo" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item spaceLi">
+                        <!--Boton inicio-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
+                        <!--Boton productos-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href=" /vistas/modelos.html" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href=" /vistas/productos.html"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Productos
                             </a>
+                            <!--Boton desplegable-->
                             <ul class="dropdown-menu fondoNav" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/vistas/modelos.html#barbijos">Barbijos</a></li>
-                                <li><a class="dropdown-item" href="/vistas/modelos.html#almohadones">Almohadones</a></li>
+                                <li><a class="dropdown-item" href="/vistas/productos.html#barbijos">Barbijos</a></li>
+                                <li><a class="dropdown-item" href="/vistas/productos.html#almohadones">Almohadones</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item spaceLi">
+                        <!--Boton talles-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="/vistas/talles.html">Talles</a>
                         </li>
-                        <li class="nav-item spaceLi">
+                        <!--Boton quienes somos-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="/vistas/quienes_somos.html">Quienes somos</a>
                         </li>
-                        <li class="nav-item spaceLi">
+                        <!--Boton contacto-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="/vistas/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -58,48 +67,58 @@
         </nav>
     </header>
     <main class="centerMain marginMain">
-        <section data-aos="zoom-in" class="formBox boxShadow">
+        <!--Card contacto-->
+        <section data-aos="zoom-in" class="form_box card_color boxShadow">
             <form action="" method="get" enctype="text/plain">
+                <!--Titulo card-->
                 <h2 class="text-align">Datos cliente</h2>
+                <!--Imput nombre y apellido-->
                 <div>
-                    <input class="formImputs" type="text" id="nombreCliente" name="nombre&apellidoCliente"
+                    <input class="form_imputs" type="text" id="nombreCliente" name="nombre&apellidoCliente"
                         placeholder="Ingrese su nombre y apellido..">
                 </div>
+                <!--Imput telefono-->
                 <div>
-                    <input class="formImputs" type="tel" id="telefonoCliente" name="telefonoCliente"
+                    <input class="form_imputs" type="tel" id="telefonoCliente" name="telefonoCliente"
                         placeholder="Ingrese su telefono..">
                 </div>
+                <!--Imput mail-->
                 <div>
-                    <input class="formImputs" type="email" id="emailCliente" name="emailCliente"
+                    <input class="form_imputs" type="email" id="emailCliente" name="emailCliente"
                         placeholder="Ingrese su mail..">
                 </div>
-                <select class="form-select form-select-lg mb-3 formImputs" aria-label=".form-select-lg example">
+                <!--Select que desea-->
+                <select class="form-select form-select-lg mb-3 form_imputs" aria-label=".form-select-lg example">
                     <option selected>¿Qué desea?</option>
                     <option value="1">Barbijo</option>
                     <option value="2">Almohadon</option>
-                  </select>
-                  <select class="form-select form-select-sm formImputs" aria-label=".form-select-sm example">
+                </select>
+                <!--Select seleccione el tipo-->
+                <select class="form-select form-select-sm form_imputs" aria-label=".form-select-sm example">
                     <option selected>Seleccione el tipo</option>
                     <option value="1">Basicos</option>
                     <option value="2">Auxiliares</option>
-                  </select>
+                </select>
+                <!--Boton enviar-->
                 <input class="buton" type="submit" value="Enviar">
             </form>
         </section>
     </main>
-    <footer class="piePagina">
-        <a target="_blank" href="https://www.instagram.com/reinabatata.textiles/"><img width="15px"
+    <!--Footer-->
+    <footer class="footer">
+        <a class="footer_item" target="_blank" href="https://www.instagram.com/reinabatata.textiles/"><img width="15px"
                 src="../imagenes/instagram.png" alt="logo_instagram">Seguinos</a>
-        <a href="mailto:reinabatata.textiles@gmail.com"><img width="15px" src="../imagenes/mail.png"
+        <a class="footer_item" href="mailto:reinabatata.textiles@gmail.com"><img width="15px" src="../imagenes/mail.png"
                 alt="logo_instagram">Contactenos</a>
-        <a> <img width="15px" src="../imagenes/copyright.png" alt="">2020-2022</a>
+        <a class="footer_item"> <img width="15px" src="../imagenes/copyright.png" alt="">2020-2022</a>
     </footer>
+    <!--Scripts-->
     <script>
         AOS.init();
     </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

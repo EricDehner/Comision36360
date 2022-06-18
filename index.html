@@ -20,7 +20,8 @@
 </head>
 
 <body class="baseWeb">
-    <header>
+    <header class="navBar_color">
+        <!--NavBar-->
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid ">
                 <h1 class="navbar-brand ">Reina Batata</h1>
@@ -30,26 +31,33 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item spaceLi">
+                        <!--Boton inicio-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
+                        <!--Boton productos-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/vistas/modelos.html" id="navbarDropdownMenuLink"
+                            <a class="nav-link dropdown-toggle" href="/vistas/productos.html" id="navbarDropdownMenuLink"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
+                            <!--Boton desplegable-->
                             <ul class="dropdown-menu fondoNav" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/vistas/modelos.html#barbijos">Barbijos</a></li>
-                                <li><a class="dropdown-item" href="/vistas/modelos.html#almohadones">Almohadones</a></li>
+                                <li><a class="dropdown-item" href="/vistas/productos.html#barbijos">Barbijos</a></li>
+                                <li><a class="dropdown-item" href="/vistas/productos.html#almohadones">Almohadones</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item spaceLi">
+                        <!--Boton talles-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="/vistas/talles.html">Talles</a>
                         </li>
-                        <li class="nav-item spaceLi">
+                        <!--Boton quienes somos-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="/vistas/quienes_somos.html">Quienes somos</a>
                         </li>
-                        <li class="nav-item spaceLi">
+                        <!--Boton contacto-->
+                        <li class="nav-item space_item">
                             <a class="nav-link" href="/vistas/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -57,10 +65,10 @@
             </div>
         </nav>
     </header>
-
     <main>
+        <!--Intro-->
         <section class="overflow-hidden">
-            <p data-aos="zoom-in" class="intro">Confeccionamos dos modelos distintos de tapabocas.. ¿Por qué? Para que
+            <p data-aos="zoom-in" class="card_intro card_color">Confeccionamos dos modelos distintos de tapabocas.. ¿Por qué? Para que
                 puedas elegir el que se
                 adapte mejor a
                 la forma de tu cara y a tus necesidades. <br>
@@ -70,8 +78,8 @@
                 la
                 mejor idea ir por este modelo, si vas a andar hablando mucho con tu tapabocas puesto. <br>
                 ¿Y vos cual preferis? ¿Tenes dudas? ¡Consultanos! </p>
+            <!--Carousel-->
             <h2 class="titulo">Alguno de nuestros productos</h2>
-
             <div id="carouselExampleCaptions" class="carousel slide carousel-dark " data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -83,6 +91,7 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
                 </div>
+                <!--Imagen carousel 1-->
                 <div class="carousel-inner overflow-visible">
                     <div class="carousel-item active align-items-center">
                         <img src="./imagenes/index/BARBIJO-BASICOS.png"
@@ -96,9 +105,10 @@
                                 Podes encontrar más en la sección <strong> modelos</strong>.</p>
                         </div>
                     </div>
+                    <!--Imagen carousel 2-->
                     <div class="carousel-item">
                         <img src="/imagenes/index/BARBIJO-AUXILIAR.png" class="d-block sizeImage boxShadow"
-                            alt="Barbijos auxiliares">
+                        alt="Barbijos auxiliares">
                         <div class="carousel-caption d-none d-sm-block">
                             <h2>Barbijos Auxiliares</h2>
                             <h3>Ideales para salir y combinarlos</h3>
@@ -107,25 +117,27 @@
                                 entre
                                 sí o utilizazrlo para cortar con los colores básicos. <br>
                                 Podes encontrar más en la sección <strong> modelos</strong>.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/imagenes/index/SIENA-CRUDO.png" class="d-block sizeImage boxShadow"
+                        <!--Imagen carousel 3-->
+                        <div class="carousel-item">
+                            <img src="/imagenes/index/SIENA-CRUDO.png" class="d-block sizeImage boxShadow"
                             alt="Almohadones basicos">
-                        <div class="carousel-caption d-none d-sm-block">
-                            <h2>Almohadones basicos</h2>
-                            <h3>Ideales para los livings</h3>
-                            <p>Estos son principalmente utilizados para quitarle espacio vacios a nuestros queridos
-                                sillones
-                                o
-                                dormitorios. <br>
-                                Podes encontrar más en la sección <strong> modelos</strong>.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/imagenes/index/CONJUNTO.png" class="d-block sizeImage boxShadow"
-                            alt="Almohadones auxiliares">
-                        <div class="carousel-caption d-none d-sm-block">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h2>Almohadones basicos</h2>
+                                <h3>Ideales para los livings</h3>
+                                <p>Estos son principalmente utilizados para quitarle espacio vacios a nuestros queridos
+                                    sillones
+                                    o
+                                    dormitorios. <br>
+                                    Podes encontrar más en la sección <strong> modelos</strong>.</p>
+                                </div>
+                            </div>
+                            <!--Imagen carousel 4-->
+                            <div class="carousel-item">
+                                <img src="/imagenes/index/CONJUNTO.png" class="d-block sizeImage boxShadow"
+                                alt="Almohadones auxiliares">
+                                <div class="carousel-caption d-none d-sm-block">
                             <h2>Almohadones auxiliares</h2>
                             <h3>Ideales para cortar con los colores básicos</h3>
                             <p>Estos son principalmente utilizados para agregar a los almohadones que ya tengamos, para
@@ -135,6 +147,7 @@
                         </div>
                     </div>
                 </div>
+                <!--Botones carousel-->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -148,13 +161,15 @@
             </div>
         </section>
     </main>
-    <footer class="piePagina">
-        <a target="_blank" href="https://www.instagram.com/reinabatata.textiles/"><img width="15px"
+    <!--Footer-->
+    <footer class="footer">
+        <a class="footer_item" target="_blank" href="https://www.instagram.com/reinabatata.textiles/"><img width="15px"
                 src="../imagenes/instagram.png" alt="logo_instagram">Seguinos</a>
-        <a href="mailto:reinabatata.textiles@gmail.com"><img width="15px" src="../imagenes/mail.png"
+        <a class="footer_item" href="mailto:reinabatata.textiles@gmail.com"><img width="15px" src="../imagenes/mail.png"
                 alt="logo_instagram">Contactenos</a>
-        <a> <img width="15px" src="../imagenes/copyright.png" alt="">2020-2022</a>
+        <a class="footer_item"> <img width="15px" src="../imagenes/copyright.png" alt="">2020-2022</a>
     </footer>
+    <!--Scipts-->
     <script>
         AOS.init();
     </script>
