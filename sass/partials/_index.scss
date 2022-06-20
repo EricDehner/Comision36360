@@ -1,0 +1,49 @@
+@import "./mixins";
+
+/*index*/
+.index {
+    width: 100%;
+
+    &_card--intro {
+        background-color: rgba(203, 203, 174, 0.306);
+        line-height: 25px;
+        padding: 1rem;
+        margin-top: 3rem;
+        border: 1px solid rgba(34, 34, 34, 0.091);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: map-get($colors, font-header);
+    }
+
+    &_titulo {
+        @extend .index_titulo-primario;
+        margin: 1rem;
+        padding: 1rem;
+
+        &-primario {
+            @include titulo;
+            display: flex;
+            justify-content: center;
+        }
+
+        &-secundario {
+            @include titulo(1.7rem);
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &_carousel-img {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 16rem;
+
+        @media screen and (max-width: 575px) {
+            width: 700px;
+            margin-top: 3rem;
+            margin: 3rem;
+        }
+    }
+}

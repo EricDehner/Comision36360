@@ -1,0 +1,35 @@
+/*header*/
+.navbar {
+    width: 100%;
+
+    &_color {
+        background-color: map-get($colors, background-header);
+    }
+
+    &_color-dropdown {
+        background-color: map-get($colors, background-header);
+        border: 1px rgb(197, 200, 172);
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &-brand {
+        font-family: map-get($fonts, title);
+        font-size: 2rem;
+    }
+
+    .navbar__item {
+        color: map-get($colors, fonts-header);
+    }
+
+    .space_item-dropdown {
+        font-size: 20px;
+        font-family: map-get($fonts, header);
+        color: map-get($colors, fonts-header);
+    }
+
+    .space_item {
+        @extend .space_item-dropdown;
+        padding: 0rem .7rem;
+    }
+}

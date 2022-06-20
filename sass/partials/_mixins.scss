@@ -1,0 +1,10 @@
+@mixin titulo ($size: 2rem) {
+    font-size: $size;
+    font-family: map-get($fonts, title);
+}
+
+@mixin empty_web {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

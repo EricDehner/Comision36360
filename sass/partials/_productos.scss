@@ -1,0 +1,33 @@
+@import "./mixins";
+
+/*produtos*/
+.productos {
+    &_container {
+        width: 400px;
+        justify-content: center;
+        display: flex;
+    }
+
+    &_img {
+        max-width: 400px;
+        min-width: none;
+        margin: 1.2rem;
+    }
+
+    &_titulo {
+        @include titulo;
+        padding: 2rem;
+    }
+}
+
+.show {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0rem 4rem;
+    }
+}

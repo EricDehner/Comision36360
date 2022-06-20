@@ -1,0 +1,22 @@
+@import "./mixins";
+
+/*Quienes somos*/
+.quienes_somos {
+    @include empty_web;
+    margin: 2rem 5rem;
+
+    @media screen and (max-width: 425px) {
+        margin: 2rem 2rem;
+    }
+
+
+    &_title {
+        @include titulo;
+        text-align: center;
+        padding: .6rem;
+    }
+
+    &_card {
+        background-color: map-get($colors, background-card);
+    }
+}
