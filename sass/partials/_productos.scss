@@ -4,14 +4,19 @@
 .productos {
     &_container {
         width: 400px;
-        justify-content: center;
         display: flex;
+        justify-content: center;
+        @media screen and (max-width: 440px) {
+                width: 280px;
+        }
     }
 
     &_img {
         max-width: 400px;
-        min-width: none;
         margin: 1.2rem;
+        @media screen and (max-width: 485px) {
+                width: 280px;
+        }
     }
 
     &_titulo {
@@ -21,8 +26,11 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+/*
+@media screen and (max-width: 440px) {
+    width: 100px;
     .container {
         padding: 0rem 4rem;
     }
 }
+*/

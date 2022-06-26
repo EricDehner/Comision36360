@@ -3,7 +3,6 @@
 /*formulario*/
 .form {
     @include empty_web;
-    margin: 0rem 5rem;
 
     &_titulo {
         @include titulo;
@@ -14,9 +13,11 @@
 
     &_box {
         background-color: map-get($colors, background-card);
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         padding: 30px;
         border-radius: 10px;
+        margin: 2rem 2rem;
     }
 
     &_imputs {
