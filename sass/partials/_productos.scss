@@ -6,16 +6,18 @@
         width: 400px;
         display: flex;
         justify-content: center;
+
         @media screen and (max-width: 440px) {
-                width: 280px;
+            width: 280px;
         }
     }
 
     &_img {
         max-width: 400px;
         margin: 1.2rem;
+
         @media screen and (max-width: 485px) {
-                width: 280px;
+            width: 280px;
         }
     }
 
@@ -25,12 +27,3 @@
         text-align: center;
     }
 }
-
-/*
-@media screen and (max-width: 440px) {
-    width: 100px;
-    .container {
-        padding: 0rem 4rem;
-    }
-}
-*/
