@@ -13,7 +13,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: map-get($fonts, text);
         color: map-get($colors, font-header);
     }
 
@@ -33,6 +33,18 @@
             @include titulo(1.7rem);
             display: flex;
             justify-content: center;
+        }
+    }
+
+    &_text {
+        font-family: map-get($fonts, text);
+        &--modelos{
+            text-decoration: none;
+            color: map-get($colors, font-header);
+        }
+        &--modelos:hover{
+            text-decoration: none;
+            color: black;
         }
     }
 

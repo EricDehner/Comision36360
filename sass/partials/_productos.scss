@@ -26,4 +26,37 @@
         padding: 2rem;
         text-align: center;
     }
+
+    &_intro {
+        position: fixed;
+        bottom: 5%;
+        right: 15px;
+        width: 14rem;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgba(34, 34, 34, 0.091);
+        border-radius: 5px;
+        padding: .5rem ;
+        font-family: map-get($fonts, text);
+        font-size: 1.2rem;
+        background-color: map-get($colors, background-emergent_card);
+        color: rgb(77, 77, 77);
+    }
+}
+
+.modal-footer {
+    flex-wrap: nowrap;
+}
+
+.btn-primario {
+    background-color: map-get($colors, background-header);
+}
+
+.modal-body {
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.72);
 }

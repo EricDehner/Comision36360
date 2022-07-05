@@ -15,6 +15,9 @@
         text-align: center;
         padding: .6rem;
     }
+    &_text {
+        font-family: map-get($fonts, text);
+    }
 
     &_card {
         background-color: map-get($colors, background-card);

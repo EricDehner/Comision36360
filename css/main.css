@@ -35,6 +35,9 @@
       font-family: "Koulen", cursive;
       font-size: 1rem;
       text-decoration: none; }
+    .footer_item-item:hover {
+      text-decoration: none;
+      color: black; }
 
 /*header*/
 .navbar {
@@ -71,7 +74,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Finlandica", sans-serif;
     color: #4d4d4d; }
   .index_titulo {
     margin: 1rem;
@@ -87,6 +90,14 @@
       font-family: "Dancing Script", cursive;
       display: flex;
       justify-content: center; }
+  .index_text {
+    font-family: "Finlandica", sans-serif; }
+    .index_text--modelos {
+      text-decoration: none;
+      color: #4d4d4d; }
+    .index_text--modelos:hover {
+      text-decoration: none;
+      color: black; }
   .index_carousel-img {
     width: 100%;
     max-width: 700px;
@@ -126,6 +137,35 @@
   padding: 2rem;
   text-align: center; }
 
+.productos_intro {
+  position: fixed;
+  bottom: 5%;
+  right: 15px;
+  width: 14rem;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(34, 34, 34, 0.091);
+  border-radius: 5px;
+  padding: .5rem;
+  font-family: "Finlandica", sans-serif;
+  font-size: 1.2rem;
+  background-color: rgba(203, 203, 174, 0.817);
+  color: #4d4d4d; }
+
+.modal-footer {
+  flex-wrap: nowrap; }
+
+.btn-primario {
+  background-color: rgba(197, 200, 172, 0.808); }
+
+.modal-body {
+  padding: 2px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.72); }
+
 /*talles*/
 .talles_container {
   width: 100%;
@@ -151,10 +191,10 @@
   padding: .5rem 0;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  font-family: "Finlandica", sans-serif;
   font-size: 1.2rem;
   border: 1px solid rgba(34, 34, 34, 0.091);
   background-color: rgba(203, 203, 174, 0.306);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #4d4d4d; }
 
 .talles_card {
@@ -173,7 +213,9 @@
 .talles_card_table {
   width: 100%;
   border: 1px solid rgba(34, 34, 34, 0.132);
-  background-color: rgba(79, 79, 67, 0.138); }
+  background-color: rgba(79, 79, 67, 0.138);
+  font-family: "Finlandica", sans-serif;
+  font-size: 1.1rem; }
   .talles_card_table-item {
     text-align: center; }
 
@@ -200,6 +242,8 @@
     font-family: "Dancing Script", cursive;
     text-align: center;
     padding: .6rem; }
+  .quienes_somos_text {
+    font-family: "Finlandica", sans-serif; }
   .quienes_somos_card {
     background-color: rgba(203, 203, 174, 0.306); }
 
@@ -229,7 +273,7 @@
     margin-bottom: 16px;
     border: 1px solid black;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    font-family: "Finlandica", sans-serif; }
   .form_buton {
     width: 100%;
     padding: 1rem;
@@ -237,4 +281,4 @@
     border: 1px solid black;
     border-radius: 4px;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    font-family: "Finlandica", sans-serif; }
