@@ -45,6 +45,11 @@
         background-color: map-get($colors, background-emergent_card);
         color: rgb(77, 77, 77);
     }
+
+    &_img-modal {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .modal-footer {
