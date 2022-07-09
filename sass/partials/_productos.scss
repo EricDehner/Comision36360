@@ -12,6 +12,11 @@
         }
     }
 
+    &_container:hover {
+        transform: scale(1.009);
+
+    }
+
     &_img {
         max-width: 400px;
         margin: 1.2rem;

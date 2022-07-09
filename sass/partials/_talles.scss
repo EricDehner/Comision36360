@@ -38,6 +38,11 @@
         min-width: 300px;
         max-width: 500px;
         padding: 1rem;
+        margin: 0 10px;
+
+        @media screen and (max-width: 425px) {
+            padding: 0
+        }
     }
 
     &_card-color {
@@ -60,6 +65,11 @@
 
         &-item {
             text-align: center;
+            padding: 5px 17px;
+
+            @media screen and (max-width: 425px) {
+                padding: 5px 8px;
+            }
         }
     }
 

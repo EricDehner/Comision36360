@@ -38,11 +38,13 @@
 
     &_text {
         font-family: map-get($fonts, text);
-        &--modelos{
+
+        &--modelos {
             text-decoration: none;
             color: map-get($colors, font-header);
         }
-        &--modelos:hover{
+
+        &--modelos:hover {
             text-decoration: none;
             color: black;
         }
